@@ -10,8 +10,6 @@ window.addEventListener("scroll", scrollHeader);
 
 // SMOOTH SCROLL
 
-
-
 // EFFECTS
 
 
