@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -26,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Kiwi Maru";
+  font-family: "Playball";
 }
 h1 {
   font-size: 70px;
@@ -97,24 +99,41 @@ header ul li a {
 }
 .banner {
   height: 100vh;
-  background: linear-gradient(
-      rgba(250, 190, 0, 0.9),
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url(../images/415a44f4354169a42dd5194428a886ab.jpg) no-repeat;
   background-size: cover;
   background-position: top;
   display: flex;
   align-items: flex-end;
+  animation: animate 16s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(../images/415a44f4354169a42dd5194428a886ab.jpg);
+  }
+  25% {
+    background-image: url(../images/2.jpg);
+  }
+  50% {
+    background-image: url(../images/DSC09796-Edit-5.jpg);
+  }
+  75% {
+    background-image: url(../images/1.jpg);
+  }
 }
 .banner .text {
   text-align: center;
   padding-bottom: 100px;
 }
+.banner .text p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 18px;
+}
 .banner h1 {
   line-height: 80px;
-  font-weight: 300;
+  font-weight: 400;
+  text-transform: capitalize;
   margin-bottom: 10px;
 }
 .btn {
@@ -237,21 +256,126 @@ header ul li a {
   margin-left: -365px;
   z-index: 1;
 }
+/* ************MAP AND CONTACT************ */
+.map {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(
+      rgba(250, 184, 43, 0.925),
+      rgba(143, 98, 0, 0.925)
+    ),
+    url(../images/map-bg.jpg);
 
+  background-size: cover;
+  display: grid;
+  align-items: center;
+}
+.map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, transparent, #fff, #fff, transparent);
+}
+
+.contact-in {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  background: url(../images/map.jpg);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 10px 0px #666;
+}
+.contact-map {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact-form {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+.contact-form h1 {
+  margin-bottom: 10px;
+  font-family: "poppins";
+  color: #f8ab11;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.contact-form-txt {
+  width: 100%;
+  height: 40px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 50px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.contact-form-txt::placeholder {
+  color: #aaa;
+}
+
+.contact-form-textarea {
+  width: 100%;
+  height: 130px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.contact-form-textarea::placeholder {
+  color: #aaa;
+}
+.contact-form-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f8ab11;
+  border-radius: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.contact-form-btn:hover {
+  background: #fff;
+  color: #f8ab11;
+}
+/* ************footer************ */
 
 footer {
   position: relative;
   padding: 50px 0;
-  background:linear-gradient(
-    rgba(250, 121, 0, 0.767),
-    rgba(216, 149, 5, 0.842),
-    rgba(250, 171, 0, 0.925)
-  ), url(../images/footer.jpg);
-  
+  background: linear-gradient(
+      rgba(250, 121, 0, 0.767),
+      rgba(216, 149, 5, 0.842),
+      rgba(250, 171, 0, 0.925)
+    ),
+    url(../images/footer.jpg);
 }
 .logo-f {
   width: 20%;
-  
 }
 .logo-f img {
   width: 100%;
@@ -268,25 +392,25 @@ footer {
 footer ul {
   margin-left: 0;
 }
-footer ul li{
+footer ul li {
   list-style: none;
   margin-bottom: 30px;
 }
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
-  transition: .3s;
+  transition: 0.3s;
 }
-footer ul li a:hover{
+footer ul li a:hover {
   color: #382806;
 }
 
-.copyright{
+.copyright {
   padding: 25px 0;
   text-align: center;
 }
-.copyright p{
+.copyright p {
   text-transform: capitalize;
   font-size: 14px;
 }
