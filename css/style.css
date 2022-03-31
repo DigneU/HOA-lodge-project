@@ -70,6 +70,10 @@ header ul li a {
   font-family: "Arimo";
   text-transform: uppercase;
   text-decoration: none;
+  transition: .3s;
+}
+header ul li a:hover{
+  border-bottom: 2px solid #4b3407;
 }
 .sticky {
   display: absolute;
@@ -92,11 +96,20 @@ header ul li a {
   border-top: solid 1px#4b3407;
   border-bottom: solid 1px#4b3407;
 }
+.sticky .book:hover{
+  color: #4b3407;
+  border-top: solid 1px#b62427;
+  border-bottom: solid 1px#b62427;
+}
 .book {
   color: #b62427;
   padding: 10px 0;
   border-top: solid 1px#fff;
   border-bottom: solid 1px #fff;
+}
+.book:hover{
+  border-top: solid 1px#4b3407;
+  border-bottom: solid 1px#4b3407;
 }
 .banner {
   height: 100vh;
@@ -327,6 +340,18 @@ header ul li a {
   font-size: 36px;
   text-transform: capitalize;
 }
+.cont-txt{
+  width: 20%;
+  margin-bottom: 10px;
+  font-family: "poppins";
+  color: #fff;
+  margin: 0 auto;
+  line-height: 3em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: capitalize;
+}
 .contact-form-txt {
   width: 100%;
   height: 40px;
@@ -394,21 +419,20 @@ header ul li a {
   text-align: center;
   padding-bottom: 65px;
 }
-.lodge-banner .text p {
+/* .lodge-banner .text p {
   width: 70%;
   margin: 0 auto;
   font-size: 18px;
-}
+} */
 .lodge-banner h1 {
   font-weight: 800;
   text-transform: capitalize;
   margin-bottom: 10px;
-  
 }
-.lodge-banner span{
+/* .lodge-banner span{
   font-size: 40px;
   
-}
+} */
 
 /* #FCF8EF */
 
@@ -429,13 +453,19 @@ header ul li a {
  
   width: 50%;
   height: 100%;
-  padding-top: 80px;
+  padding-top: 15px;
 }
 .left-resto{
   order: 2;
   width: 50%;
   height: 100%;
   background: url(../images/19.jpg);
+  background-size: cover;
+}
+.left-camp{
+  width: 50%;
+  height: 100%;
+  background: url(../images/23.jpg);
   background-size: cover;
 }
 .right h1{
@@ -445,9 +475,12 @@ header ul li a {
   width: 80%;
   margin: 0 auto;
 }
+.facs h1{
+ line-height: 2em;
+}
 .facilities{
-  width: 80%;
- justify-content: center;
+  width: 75%;
+ margin-bottom: 1em;
 }
 .facs-txt h4{
   width: 60%;
@@ -465,6 +498,63 @@ header ul li a {
 }
 
 
+/* ************SERVICES SECTION************ */
+.services-banner {
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(to right,rgba(141, 105, 26, 0.514),rgba(141, 105, 26, 0.151)),url(../images/25.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services-banner .text {
+  text-align: center;
+  padding-bottom: 65px;
+}
+
+.services-banner h1 {
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+
+.left-offer{
+  width: 50%;
+  height: 100%;
+  background: url(../images/rhino.jpg);
+  background-size: cover;
+}
+.right-trips{
+ 
+  width: 50%;
+  height: 100%;
+  padding-top: 15px;
+}
+.left-trips{
+  order: 2;
+  width: 50%;
+  height: 100%;
+  background: url(../images/26.jpg);
+  background-size: cover;
+}
+.left-ground{
+  width: 50%;
+  height: 100%;
+  background: url(../images/27.jpg);
+  background-size: cover;
+}
+
+.left-events{
+  order: 2;
+  width: 50%;
+  height: 100%;
+  background: url(../images/28.jpg);
+  background-size: cover;
+}
 
 /* ************footer************ */
 
@@ -488,7 +578,7 @@ footer {
 .footer-inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .footer-inner .col {
   padding-left: 50px;
