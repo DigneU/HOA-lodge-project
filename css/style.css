@@ -123,16 +123,16 @@ header ul li a:hover{
 @keyframes animate {
   0%,
   100% {
-    background-image: url(../images/415a44f4354169a42dd5194428a886ab.jpg);
+    background-image: url(../images/lodge\ images/6.jpg);
   }
   25% {
-    background-image: url(../images/2.jpg);
+    background-image: url(../images/lodge\ images/2.jpg);
   }
   50% {
-    background-image: url(../images/DSC09796-Edit-5.jpg);
+    background-image: url(../images/lodge\ images/1.jpg);
   }
   75% {
-    background-image: url(../images/1.jpg);
+    background-image: url(../images/lodge\ images/4.jpg);
   }
 }
 .banner .text {
