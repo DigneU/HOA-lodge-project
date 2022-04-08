@@ -15,14 +15,14 @@
     />
     <title>camping</title>
   </head>
-  <body>
+  <body class="camp-body">
     <main class="app">
       <header id="header">
         <nav>
           <div class="left-menu">
             <ul>
               <li><a href="index.html">home</a></li>
-              <li><a href="#">the lodge</a></li>
+              <li><a href="lodge.html">the lodge</a></li>
               <li><a href="services.html">services</a></li>
             </ul>
           </div>
@@ -40,9 +40,9 @@
         </nav>
       </header>
 
-      <section class="lodge-banner" data-scene>
-        <div class="lodge-container outer">
-          <div class="text lodge-txt" data-aos="zoom-out">
+      <section class="camp-banner" data-scene>
+        <div class="camp-container outer">
+          <div class="text camp-txt" data-aos="zoom-out">
             <h1> camping</h1>
             
           </div>
@@ -50,7 +50,7 @@
       </section>
 
       <section>
-        <div class="wrapper">
+        <div class="camp-wrapper">
           <div class="left-camp">
             <div class="imgbx">
             </div>
@@ -78,9 +78,9 @@
             <div class="col">
               <ul>
                 <li><h3>links</h3></li>
-                <li><a href="#">the lodge</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">about</a></li>
+                <li><a href="lodge.html">the lodge</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="about.html">about</a></li>
               </ul>
             </div>
             <div class="col">
@@ -129,21 +129,21 @@
 
 $(document).ready(function(){
   $(window).scroll(function(){
-    $('.lodge-banner').css("opacity", 1 - $(window).
+    $('.camp-banner').css("opacity", 1 - $(window).
     scrollTop() / 700 )
   })
 });
 
 $(document).ready(function(){
   $(window).scroll(function(){
-    $('.lodge-txt').css("opacity", 3 - $(window).
+    $('.camp-txt').css("opacity", 3 - $(window).
     scrollTop() / 200 )
   })
 });
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  $(".lodge-banner").css({
+  $(".camp-banner").css({
     filter: "blur(" + scroll / 30 + "px)",
   });
 });
